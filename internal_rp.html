@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal RP Dashboard</title>
+    <!-- Assuming 'Poppins' font is imported -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #9309b2; /* Primary color */
+            --secondary-color: #6EC6FF; /* Secondary color */
+            --text-color: #333333; /* Text color */
+            --background-color: #aba5a5; /* Background color */
+            --error-color: #FF5252; /* Error color */
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+        }
+
+        .top-bar {
+            align-items: center;
+            justify-content: space-between;
+            background-color: var(--primary-color);
+        }
+
+        .top-bar h1 {
+            color: white;
+            margin: 0;
+        }
+
+        .header-tabs {
+            list-style: none;
+            display: flex;
+        }
+
+        .header-tabs a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: auto;
+            width: 100%;
+            background-color: var(--background-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 0px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin: 10px 0;
+        }
+        .student-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .student-details p {
+            margin: 0;
+        }
+
+        table {
+            width: 90%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            border-color: #9309b2;
+        }
+
+        th, td {
+            border: 1px solid var(--primary-color);
+            text-align: center;
+        }
+
+        th {
+            background-color: var(--secondary-color);
+            color: white;
+            font-weight: bold;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .buttons button {
+        /* Add any additional button styles here */
+        margin-right: 10px; /* Add margin between buttons */}
+        .img {
+            width: auto;
+            height: auto;
+            margin-bottom: 10px; /* Adjusted margin-bottom */
+        }
+        button {
+            padding: 10px 20px;
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <h1>Internal RP Dashboard</h1>
+        <ul class="header-tabs">
+            <li><a href="https://forms.gle/NdYK9279fALi4eDr5">Feedback</a></li>
+            <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRuoa_2Si7e9QKvKoQEQ7kjg2LblBTqGMyuJZIEqMWS2vna_VcSrxFPQ1FIBRbyTyd8BMHrNghbE9xR/pubhtml">RP Summary</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h2>Student Information</h2>
+        <div class="student-details">
+            <p>Student Name: Ritika Devi S P</p>
+            <p>Department: Computer Science</p>
+            <p>Roll Number: 737623CS272</p>
+            <p>Semster: 1</p>
+            <p>IP/IP2:IP1</p>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>SN</th>
+                    <th>Sub Code</th>
+                    <th>Sub Name</th>
+                    <th>Reward Points Redeemed</th>
+                    <th>Internal Marks</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>21CS101</td>
+                <td>Enginerring mathematics 1</td>
+                <td>500</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>21CS102</td>
+                <td>Enginerring physics 1</td>
+                <td>500</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>21CS103</td>
+                <td>Enginerring chemistry 1</td>
+                <td>500</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>21CS104</td>
+                <td>Python problem solving</td>
+                <td>500</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>21CS091</td>
+                <td>python laboratory</td>
+                <td>500</td>
+                <td>15</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="buttons">
+            <button id="submit-button">Submit</button>
+            <p> </p>
+            <button id="not-satisfied-button" onclick="window.location.href='entry_marks.html'">Not Satisfied (Enter Your Own Marks)</button>
+        </div>
+    </div>
+    <!-- Add any additional content or scripts here -->
+</body>
+</html>
