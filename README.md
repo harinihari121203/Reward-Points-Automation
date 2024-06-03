@@ -12,7 +12,7 @@ HTML (Hypertext Markup Language): Provides the structure and organization of web
 CSS (Cascading Style Sheets): Enhances the visual appeal and design of the user interface.
 JavaScript: Enables dynamic content and enhances user interaction on the web pages.
 
-#Features
+# Features
 User Interface
 Intuitive Design: A user-friendly interface designed to provide a seamless experience for students, educators, and administrators.
 Responsive Layout: Ensures compatibility across various devices, including desktops, tablets, and mobile phones.
